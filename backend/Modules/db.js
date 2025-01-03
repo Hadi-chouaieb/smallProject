@@ -5,7 +5,7 @@ const db = mysql.createConnection({
   host: 'localhost',  
   user: 'root',     
   password: '',       
-  database: 'clubs_iset_sfax' ,
+  database: '' ,
   charset: 'utf8mb4'
 });
 
