@@ -1,0 +1,108 @@
+.tree-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .tree-container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  /* Tree layout - center first card at the top */
+  .card-containere {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    position: relative;
+  }
+  
+  /* Connecting lines */
+  .tree-container .row::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjusts vertical space between rows */
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: #ccc;
+  }
+  
+  .tree-container .row:first-child::before {
+    display: none; /* No line for the first row */
+  }
+  
+  /* Horizontal lines to connect sibling cards */
+  .tree-container .row::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ccc;
+  }
+  
+  .tree-container .row:first-child::after {
+    display: none; /* No horizontal line for the first row */
+  }
+  
+  /* Image styling */
+  .card-imagee {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Card title and text styling */
+  .card-titlee {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    text-transform: capitalize;
+  }
+  
+  .card-texte {
+    font-size: 0.8rem;
+    color: #777;
+    text-transform: uppercase;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card-containere {
+      width: 120px;
+    }
+  
+    .card-imagee {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .remouve{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #d16e6e;
+    font-size: 18px;
+    z-index: 1;
+    transition: 1s;
+
+  }
+  .remouve:hover{
+    color: #f03636;
+    cursor: pointer;
+    transition: 1s;
+    scale: 1.2;
+  }

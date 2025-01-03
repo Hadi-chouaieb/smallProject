@@ -1,0 +1,133 @@
+/* General card styling */
+.card-post {
+  background: #f8f9fa; /* Light gray background */
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid #e9ecef; /* Thin border */
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* User profile picture */
+.profile-photo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border: 3px solid #007bff; /* Blue border */
+  border-radius: 50%; /* Circle image */
+}
+
+/* User details */
+.user-name {
+  font-weight: bold;
+  color: #333;
+  font-size: 18px;
+}
+
+.post-date {
+  font-size: 13px;
+  color: #6c757d; /* Muted text for date */
+}
+
+/* Post title and description */
+.post-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #007bff; /* Blue title */
+  margin-bottom: 10px;
+}
+
+.post-description {
+  font-size: 16px;
+  color: #495057; /* Darker text for readability */
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Post image */
+.post-img {
+  max-height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px; /* Slightly rounded corners */
+  margin-bottom: 15px;
+  border: 1px solid #dee2e6; /* Border for image */
+}
+
+/* Like section */
+.like-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.like-icon {
+  font-size: 20px;
+  color: #ff4757; /* Heart icon color */
+}
+
+.like-count {
+  font-size: 16px;
+  color: #333;
+  margin-left: 8px;
+  font-weight: 500;
+}
+.bg-none {
+  background: transparent !important;
+}
+
+
+
+.transparent-modal {
+  background-color: transparent !important; /* Ensure the background is transparent */
+  border: none; /* Remove any borders */
+}
+
+/* Optional: Style for modal dialog */
+.modal-content {
+  border: none; /* Remove border for the entire modal */
+  border-radius: 15px; /* Optional: Rounded corners */
+}
+
+:root {
+  --bs-body-bg :transparent !important;
+}
+
+.like-icon {
+  transition: transform 0.2s ease; /* Smooth transition */
+}
+
+.like-icon.liked {
+  transform: scale(1.2); /* Scale effect when liked */
+}
+
+.like-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.custom-play-pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-play-pause-btn.play {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 2s ease !important;
+}
+
+.custom-play-pause-btn.pause {
+  background-color: rgba(209, 199, 199, 0.7);
+  
+  transition: display 1s ease !important;
+  display: none;
+}

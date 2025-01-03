@@ -1,0 +1,111 @@
+/* General Navbar Styling */
+.navbar {
+  background: #2C3E50; /* Deep blue background for a professional feel */
+  border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+  padding: 0.5rem 2rem; /* Spacing for a cleaner look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo Styling */
+.navbar-brand img {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Navbar Link Styling */
+.navbar-nav {
+  font-family: 'Inter', sans-serif; /* Clean, modern font */
+}
+
+.nav-link {
+  color: #ecf0f1 !important; /* Light text color */
+  font-size: 1.1rem; /* Slightly larger text for better readability */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 10px 15px;
+  text-transform: uppercase; /* Consistent case for better readability */
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: #f39c12; /* Yellow accent color on hover */
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+.nav-link.active {
+  color: #f39c12; /* Highlight active link with yellow */
+  font-weight: bold; /* Bold active link for emphasis */
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f39c12;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+  width: 100%; /* Underline effect on hover */
+}
+
+/* Navbar Toggler Button */
+.navbar-toggler {
+  border: 1px solid #ecf0f1; /* Light border for the hamburger icon */
+}
+
+.navbar-toggler-icon {
+  background-color: #ecf0f1; /* White icon color */
+}
+
+/* Container Styling */
+.container-fluid {
+  max-width: 1200px; /* Set a max width for consistency */
+  margin: 0 auto; /* Center the container */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center; /* Center-align navbar items */
+  }
+  .nav-link {
+    font-size: 1rem; /* Slightly smaller text for mobile */
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    height: 40px; /* Smaller logo for mobile */
+  }
+
+  .nav-item {
+    margin-top: 10px; /* Add spacing between items */
+  }
+}
+
+/* Smooth Fade-in effect on page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: fadeIn 1s ease-out; /* Add a fade-in animation */
+}

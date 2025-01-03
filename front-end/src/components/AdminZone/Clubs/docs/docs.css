@@ -1,0 +1,18 @@
+.drop-area {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .drop-area.highlight {
+    background-color: #f0f9ff;
+  }
+  
+  .file-name {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  

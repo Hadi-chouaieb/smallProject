@@ -1,0 +1,76 @@
+/* Container */
+.file-container {
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.file-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.file-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #1a73e8;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* List Items */
+.file-item {
+  background-color: #ffffff;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.file-item:hover {
+  background-color: #f1f3f5;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* File Name Styling */
+.file-name {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.file-name:hover {
+  color: #007bff;
+}
+
+/* Button Customization */
+.btn-custom {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #1558b3;
+  transform: scale(1.05);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .file-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-custom {
+    margin-top: 10px;
+  }
+}
